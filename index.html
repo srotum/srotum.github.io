@@ -1,310 +1,875 @@
-<!DOCTYPE html>
-<html lang="en" >
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Srotum - We have devised a disruptive system for generating clean electricity which is more reliable &amp; affordable than other renewable sources.</title>
-<style>
-@import url('https://fonts.googleapis.com/css?family=Nunito');
-::selection {
-  background: #2D2F36;
-}
-::-webkit-selection {
-  background: #2D2F36;
-}
-::-moz-selection {
-  background: #2D2F36;
-}
-body {
-  background: linear-gradient(128deg, #2c2e55, #3b3b46);
-  font-family: 'Nunito', sans-serif;
-  margin: 0;
-  padding: 20px;
-}
 
-.page {
-  /*background: #e2e2e5;*/
-  display: flex;
-  flex-direction: column;
-  height: calc(100% - 40px);
-  position: absolute;
-  place-content: center;
-  
-  width: calc(100% - 40px);
-  -webkit-box-shadow: 2px 2px 4px -2px rgba(0,0,0,0.75);
--moz-box-shadow: 2px 2px 4px -2px rgba(0,0,0,0.75);
-box-shadow: 2px 2px 4px -2px rgba(0,0,0,0.75);
-}
-.page {
-background: linear-gradient(128deg, #2c2e55, #3b3b46);
-/*background-size: 400% 400%;*/
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Home | Srotum</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=no">
+    <meta name="twitter:ogg" content="">
+    <meta name="linkedin:ogg" content="">
+    <meta description="Renewable Energy, 24/7 Elecricity, Microgrid, Device">
+    <link rel="stylesheet" href="https://unpkg.com/bootstrap-material-design@4.1.1/dist/css/bootstrap-material-design.min.css" integrity="sha384-wXznGJNEXNG1NFsbm0ugrLFMQPWswR3lds2VeinahP8N0zJw9VWSopbjv2x7WCvX" crossorigin="anonymous">
+    <link href="http://www.strategyminions.com/des/css/carousel.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.9/css/all.css" integrity="sha384-5SOiIsAziJl6AWe0HWRKTXlfcSHKmYV4RBF18PPJ173Kzn7jzMyFuTtk8JA7QQG1" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=EB+Garamond|Josefin+Slab:400,600|Vollkorn|Yanone+Kaffeesatz:300" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Playfair+Display:700,900|Fira+Sans:400,400italic' rel='stylesheet' type='text/css'>
+    <style media="screen">
+      html, body {
+        width: 100%;
+        height: 100%;
+      }
+      body{
+        font-family: 'Josefin Slab', serif;
+      }
+      h2{
+        font-weight: 500;
+      }
 
--webkit-animation: AnimationName 2s ease infinite;
--moz-animation: AnimationName 2s ease infinite;
-animation: AnimationName 2s ease infinite;
+      .p-2:hover{
+        text-decoration: none;
+        border-bottom: 1px solid #fff;
+      }
+      .pain{
+        margin-top: -80px;
+        background-image: url(http://www.strategyminions.com/des/img/painpoints.jpg);
+        background-size: cover;
+        min-height: 600px;
+        padding-top: 200px;
+        color: #fff;
+      }
+      .parallax-one{
+        /* The image used */
+          background-image: url("http://www.strategyminions.com/des/img/ideabulb.png");
 
-@-webkit-keyframes AnimationName {
-    0%{background-position:2% 0%}
-    50%{background-position:99% 100%}
-    100%{background-position:2% 0%}
-}
-@-moz-keyframes AnimationName {
-    0%{background-position:2% 0%}
-    50%{background-position:99% 100%}
-    100%{background-position:2% 0%}
-}
-@keyframes AnimationName { 
-    0%{background-position:2% 0%}
-    50%{background-position:99% 100%}
-    100%{background-position:2% 0%}
-}
-}
-@media (max-width: 767px) {
-  .page {
-    height: auto;
-    margin-bottom: 20px;
-    padding-bottom: 20px;
-  }
-}
-.container {
-  display: flex;
-  height: 320px;
-  margin: 0 auto;
-  width: 640px;
-}
-@media (max-width: 767px) {
-  .container {
-    flex-direction: column;
-    height: 630px;
-    width: 320px;
-  }
-}
-.left {
-  background: white;
-  height: calc(100% - 40px);
-  top: 20px;
-  position: relative;
-  width: 50%;
-}
-@media (max-width: 767px) {
-  .left {
-    height: 100%;
-    left: 20px;
-    width: calc(100% - 40px);
-    max-height: 270px;
-  }
-}
-.login {
-  font-size: 50px;
-  font-weight: 900;
-  margin: 20px 40px 40px;
-}
-.eula {
-  color: #999;
-  font-size: 14px;
-  line-height: 1.5;
-  margin: -30px 40px;
-}
-.right {
-  background: #474A59;
-  box-shadow: 0px 0px 40px 16px rgba(0,0,0,0.22);
-  color: #F1F1F2;
-  position: relative;
-  width: 50%;
-}
-@media (max-width: 767px) {
-  .right {
-    flex-shrink: 0;
-    height: 100%;
-    width: 100%;
-    max-height: 350px;
-  }
-}
-svg {
-  position: absolute;
-  width: 320px;
-}
-path {
-  fill: none;
-  stroke: url(#linearGradient);;
-  stroke-width: 4;
-  stroke-dasharray: 240 1386;
-}
-.form {
-  margin: 40px;
-  position: absolute;
-}
-label {
-  color:  #c2c2c5;
-  display: block;
-  font-size: 14px;
-  height: 16px;
-  margin-top: 20px;
-  margin-bottom: 5px;
-}
-input {
-  background: transparent;
-  border: 0;
-  color: #f2f2f2;
-  font-size: 20px;
-  height: 30px;
-  line-height: 30px;
-  outline: none !important;
-  width: 100%;
-}
-input[type="text"]{
-  text-transform: capitalize;
-}
-input::-moz-focus-inner { 
-  border: 0; 
-}
-#submit {
-  color: #707075;
-  margin-top: 40px;
-  transition: color 300ms;
-}
-#submit:focus {
-  color: #f2f2f2;
-}
-#submit:active {
-  color: #d0d0d2;
-}
-/*css */
-.fulltext p,
-.less {
-  display: none;
-}
+          /* Set a specific height */
+          height: 300px;
 
-.fulltext:target p,
-.fulltext:target .less {
-  display: block;
-}
+          /* Create the parallax scrolling effect */
+          background-attachment: fixed;
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: cover;
+          padding-top: 80px;
+      }
+      .idea{
+        background-image: url(http://www.strategyminions.com/des/img/white.jpg);
+        background-size: cover;
+        opacity: 40%;
+      }
+      .fourhundred{
+        max-height: 400px;
+      }
+      .validate-idea{
+        background-color: #002626;
+        color: #fff;
+        border-bottom: 5px solid #fff;
+        min-height: 300px;
+        padding: 40px 30px;
+        margin-bottom: 20px;
+      }
+      .howwearedifferent{
+        padding:40px 65px;
+        margin-top: -30px;
+        min-height: 600px;
+        background-color: #000c0c;
+      }
+      .whatsnext{
+            min-height: 500px;
+          	color: #808080;
+          	background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
+          	background-size: 400% 400%;
+          	-webkit-animation: Gradient 25s ease infinite;
+          	-moz-animation: Gradient 25s ease infinite;
+          	animation: Gradient 25s ease infinite;
+          }
 
-.fulltext:target .more {
-  display: none;
-}
-    </style>
-  <script>
-  window.console = window.console || function(t) {};
-</script>
-  <script>
-  if (document.location.search.match(/type=embed/gi)) {
-    window.parent.postMessage("resize", "*");
-  }
-</script>
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/solid.css" integrity="sha384-v2Tw72dyUXeU3y4aM2Y0tBJQkGfplr39mxZqlTBDUZAb9BGoC40+rdFCG0m10lXk" crossorigin="anonymous">
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/fontawesome.css" integrity="sha384-q3jl8XQu1OpdLgGFvNRnPdj5VIlCvgsDQTQB6owSOHWlAurxul7f+JpUOVdAiJ5P" crossorigin="anonymous">
+          @-webkit-keyframes Gradient {
+          	0% {
+          		background-position: 0% 50%
+          	}
+          	50% {
+          		background-position: 100% 50%
+          	}
+          	100% {
+          		background-position: 0% 50%
+          	}
+          }
 
-</head>
+          @-moz-keyframes Gradient {
+          	0% {
+          		background-position: 0% 50%
+          	}
+          	50% {
+          		background-position: 100% 50%
+          	}
+          	100% {
+          		background-position: 0% 50%
+          	}
+          }
 
-<body translate="no" >
+          @keyframes Gradient {
+          	0% {
+          		background-position: 0% 50%
+          	}
+          	50% {
+          		background-position: 100% 50%
+          	}
+          	100% {
+          		background-position: 0% 50%
+          	}
+          }
+          .lab{
+            /* margin-top: -45px; */
+            min-height: 550px;
+            color:#000;
+            background-image: url(http://www.strategyminions.com/des/img/labm.jpg);
+            background-size: cover;
+          }
+          .about{
+            min-height: 500px;
+            background-color: #000;
+            -webkit-box-shadow: 0px 7px 18px -4px rgba(0,0,0,0.75);
+            -moz-box-shadow: 0px 7px 18px -4px rgba(0,0,0,0.75);
+            box-shadow: 0px 7px 18px -4px rgba(0,0,0,0.75);
+            z-index: 10000;
+          }
+          .parallax-two{
+        /* The image used */
+              background-image: url("http://www.strategyminions.com/des/img/fallenapple.jpg");
+              /* Set a specific height */
+              height: 350px;
+              /* Create the parallax scrolling effect */
+              background-attachment: fixed;
+              background-position: center;
+              background-repeat: no-repeat;
+              background-size: cover;
+              padding-top: 60px;
+              color: #fff;
+          }
+          .parallax-two p{
+            font-size: 18px;
+          }
+          .parallax-service{
+        /* The image used */
+              background-image: url("http://www.strategyminions.com/des/img/service.jpg");
 
-  <div class="page">
-  <div class="container">
-    <div class="left" id="less-1">
-  <div class="login">Srotum</div>
-  <div class="eula"><p>We have devised a disruptive system for generating clean electricity which is more reliable &amp; affordable than other renewable sources.</p>
+              /* Set a specific height */
+              height: 450px;
 
-  <div class="fulltext" id="more-1">
-    <a class="more" href="#more-1"><i class="fas fa-angle-down"></i></a>
+              /* Create the parallax scrolling effect */
+              background-attachment: fixed;
+              background-position: center;
+              background-repeat: no-repeat;
+              background-size: cover;
+              padding-top: 60px;
+          }
+          .filter{
+            -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+            filter: grayscale(100%);
+          }
+          .cardy{
+            padding: 40px;
+            font-size: 18px;
+            background-color: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
+          }
+          .cardy li{
+            margin-bottom: 10px;
+          }
+          .underline{
+            border-bottom: 1px solid #fff;
+          }
+          .p-2{
+            text-transform: uppercase;
+          }
+          .padded{
+            padding: 50px;
+          }
+          .img-side{
+            width: 220px;
+            height: auto;
+          }
+          .ideaimg{
+            z-index: -1;
+            /* background-image: url(http://strategyminions.com/des/img/concept.png); */
+            background-image: url(http://www.strategyminions.com/des/img/rendered.png);
+            background-size: contain;
+            /* background-attachment: fixed; */
+            background-repeat: no-repeat;
+            background-position: center;
+            opacity: 0.6;
+          }
+          .card{
+            -webkit-transform: scale(0.8);
+            -ms-transform: scale(0.8);
+            transform: scale(0.8);
+            font-size: 16px;
+          }
+          .card:hover{
+            -webkit-transform: scale(0.9);
+            -ms-transform: scale(0.9);
+            transform: scale(0.9);
+            cursor: e-resize;
+          }
+          .up{
+            margin-top: 20px;
+            margin-left: 30px;
+            display: block;
+            opacity: 1;
+          }
+          .card-title{
+            font-weight: 500;
+          }
+          /* animation */
+          /* @import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400"); */
+          .text-js {
+            opacity: 0;
+          }
 
-    <p>Subscribe to know more about us.</p>
+          .cursor {
+            display: block;
+            position: absolute;
+            height: 100%;
+            top: 0;
+            right: -5px;
+            width: 2px;
+            /* Change colour of Cursor Here */
+            background-color: white;
+            z-index: 1;
+            -webkit-animation: flash 0.5s none infinite alternate;
+                    animation: flash 0.5s none infinite alternate;
+          }
 
-    <a class="less" href="#less-1"><i class="fas fa-angle-up"></i></a>
+          @-webkit-keyframes flash {
+            0% {
+              opacity: 1;
+            }
+            100% {
+              opacity: 0;
+            }
+          }
 
-    </div>
-  <!-- </article> -->
-  </div>
-    </div>
-    <div class="right">
-      <svg viewBox="0 0 320 300">
-        <defs>
-          <linearGradient
-                          inkscape:collect="always"
-                          id="linearGradient"
-                          x1="13"
-                          y1="193.49992"
-                          x2="307"
-                          y2="193.49992"
-                          gradientUnits="userSpaceOnUse">
-            <stop
-                  style="stop-color:#ff00ff;"
-                  offset="0"
-                  id="stop876" />
-            <stop
-                  style="stop-color:#ff0000;"
-                  offset="1"
-                  id="stop878" />
-          </linearGradient>
-        </defs>
-        <path d="m 40,120.00016 239.99984,-3.2e-4 c 0,0 24.99263,0.79932 25.00016,35.00016 0.008,34.20084 -25.00016,35 -25.00016,35 h -239.99984 c 0,-0.0205 -25,4.01348 -25,38.5 0,34.48652 25,38.5 25,38.5 h 215 c 0,0 20,-0.99604 20,-25 0,-24.00396 -20,-25 -20,-25 h -190 c 0,0 -20,1.71033 -20,25 0,24.00396 20,25 20,25 h 168.57143" />
-      </svg>
-      <form action="done.html" method="post">
-      <div class="form">
-        <label for="name">NAME</label>
-        <input type="text" id="name">
-        <label for="email">EMAIL</label>
-        <input type="email" id="email">
-        <input type="submit" id="submit" value="SUBSCRIBE">
+          @keyframes flash {
+            0% {
+              opacity: 1;
+            }
+            100% {
+              opacity: 0;
+            }
+          }
+                  /* entire container, keeps perspective */
+          .flip-container {
+          	perspective: 1000px;
+          }
+          	/* flip the pane when hovered */
+          	.flip-container:hover .flipper, .flip-container.hover .flipper {
+          		transform: rotateY(180deg);
+          	}
+
+          .flip-container, .front, .back {
+          	/* width: 320px;
+          	height: 480px; */
+            width: 180px;
+            height: 220px;
+            margin-bottom: 80px;
+          }
+
+          /* flip speed goes here */
+          .flipper {
+          	transition: 0.6s;
+          	transform-style: preserve-3d;
+
+          	position: relative;
+          }
+
+          /* hide back of pane during swap */
+          .front, .back {
+          	backface-visibility: hidden;
+
+          	position: absolute;
+          	top: 0;
+          	left: 0;
+          }
+
+          /* front pane, placed above back */
+          .front {
+          	z-index: 2;
+          	/* for firefox 31 */
+          	transform: rotateY(0deg);
+          }
+
+          /* back, initially hidden pane */
+          .back {
+          	transform: rotateY(180deg);
+          }
+          .dot {
+            height: 5px;
+            width: 5px;
+            background-color: #ddd;
+            border-radius: 50%;
+            display: inline-block;
+          }
+          .carousel-caption h2{
+            margin-top: 74px;
+          }
+          .x{
+            max-width: 180px;
+            max-height: 230px;
+            min-width: 180px;
+            min-height: 230px;
+          }
+</style>
+  </head>
+  <body>
+    <header>
+      <div class="navbar navbar-expand-md navbar-dark fixed-top d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3   box-shadow">
+        <h3 class="my-0 mr-md-auto font-weight-normal text-white"><img width="65%" height="auto;" src="http://strategyminions.com/des/img/logo-full-new.png" alt=""></h3>
+          <nav class="my-2 my-md-0 mr-md-3">
+            <a class="p-2 text-white" href="#pain">The Idea</a>
+            <a class="p-2 text-white" href="#next"></i> What's Next ?</a>
+            <a class="p-2 text-white" href="#lab"> Lab</a>
+            <a class="p-2 text-white" href="#about"> About</a>
+          </nav>
+        </div>
+  </header>
+  <main role="main" style="margin-top:-65px;">
+    <div id="myCarousel" class="carousel slide" data-ride="carousel" >
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner" >
+        <div class="carousel-item active">
+          <img class="first-slide img-fluid" src="http://www.strategyminions.com/des/img/1.jpg" alt="First slide">
+          <div class="container">
+            <div class="carousel-caption text-left" >
+              <h1>Rural Electrification</h1>
+              <h2>Lighting up villages without a hassle and bringing a socio-economic upliftment.</h2>
+              <p style="min-height:150px;"></p>
+              <!-- <p class="text-center"><span class="glyphicons glyphicons-mouse-scroll"></span></p> -->
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img class="third-slide" src="http://www.strategyminions.com/des/img/resp-main.jpg" alt="Third slide">
+          <div class="container">
+            <div class="carousel-caption text-right">
+              <h1>Smart Monitoring</h1>
+              <h2>Imagine a smart system which can tag electricity generated from a renewable source.</h2>
+            <p style="min-height:150px;"></p>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img class="second-slide" src="http://www.strategyminions.com/des/img/high.jpg" alt="Second slide">
+          <div class="container">
+            <div class="carousel-caption text-left">
+              <h1>Microgrid</h1>
+              <!-- <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p> -->
+              <h2>Affordable 24/7 electricity to the remotest village won't be a dream anymore. </h2>
+              <p style="min-height:150px;"></p>
+            </div>
+          </div>
+        </div>
       </div>
-      </form>
+    </div>
+    <div class="pain" id="pain">
+
+    <div class="container">
+      <div class="row">
+        <div class="col-8" style="background: hsla(220, 8%, 12%, 0.12);">
+        <h2>The Problem</h2>
+        <p style="font-size:21px;color:#fff;margin-top:20px;">
+        In India, more than <span class="underline">18,000 villages </span>and <span class="underline">235 Mn </span> people live without electricity.<br>
+        The abundance of it is under-appreciated in the urban areas whereas the rural ones have to work way too hard for it. <br>
+        The reliability of the other renewable sources is low due to climatic, geographic, monetary, amongst many other constraints.
+        </p>
+        </div>
+      </div>
+    </div>
+    </div>
+    <div class="parallax-one">
+
+<!--  here comes the animation-->
+<div class="type-js headline text-justify text-white" style="margin-top:60px;padding-left: 80px;">
+  <h2 class="text-js " style="font-weight:bolder;text-shadow: 2px 2px 5px rgba(150, 150, 150, 1);">We generate clean energy without harnessing solar, wind, hydro, tidal or biomass!</h2>
+  <!-- <a href="#idea" class="btn btn-outline-primary">Read More</a> -->
+</div>
+<!--  ends the animation-->
+    </div>
+    <div id="idea" class="row" style="padding: 0 40px; margin-bottom:20px;">
+      <div class="col up">
+        <h2>The Idea</h2>
+        <h4 style="color:#808080;"> We have devised a disruptive system for generating clean electricity
+      which is more reliable & affordable than other renewable sources.
+      </h4>
+    </div>
+        </div>
+        <div class="row" style="margin-top:-40px; padding:0 40px;">
+      <div class="col-8">
+        <div class="card-group">
+          <div class="card" style="background-color:#e5f2f2;">
+            <img class="card-img-top" src="http://www.strategyminions.com/des/img/concept1.png" alt="Card image cap">
+            <div class="card-block" >
+              <h4 class="card-title">PRINCIPLE </h4>
+              <p class="card-text">
+                The machine is being designed
+            and simulated to harness the
+            principle of gravitational force
+            acting downwards along with
+            buoyant force acting upwards to
+            make a sustainable system which
+            is reliable, easy to install &
+            maintain.
+              </p>
+            </div>
+          </div>
+          <div class="card" style="background-color:#b2d8d8;">
+            <img class="card-img-top" src="http://www.strategyminions.com/des/img/concept2.png" height="230px;" alt="Card image cap">
+            <div class="card-block" >
+              <h4 class="card-title">FUNCTIONALITY</h4>
+              <p class="card-text">
+                The gravitational force drives
+down the pre-decided load of
+mass and this action exerts an
+equivalent torque on the
+attached shaft which is
+efficiently utilized into driving
+electric generators.
+              </p>
+            </div>
+          </div>
+          <div class="card" style="background-color:#7fbfbf;">
+            <img class="card-img-top" src="http://www.strategyminions.com/des/img/concept3.png" alt="Card image cap">
+            <div class="card-block" >
+              <h4 class="card-title">OUTPUT</h4>
+              <p class="card-text">
+                The output of this machine is
+clean, and cheap electricity
+with more than 70 % capacity
+factor.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-4 ideaimg" >
+      </div>
+    </div>
+    <div class="validate-idea">
+      <div class="">
+        <div class="row" style="margin-left:30px;">
+          <div class="col-sm" style="margin-top:5px; border-right:1px solid #009688;">
+            <h3>Gravity</h3>
+            <!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p> -->
+              <h4 style="color:#808080">Power of falling !!</h4>
+              <p>During Han Dynasty in China, trip hammers powered by the gravity-driven water wheel were used to pound and hull grain, break ore and in the early papermaking. Since the 19th-century gravity is being used to generate electricity as on hydropower plants.</p>
+              <p>Inspired by making our system 100% eco-friendly, we are harnessing energy from the work done by nature: <ins>Gravity</ins>.</p>
+          </div>
+          <div class="col-sm" style="margin-top:5px;border-left:1px solid #009688;">
+            <h3>Buoyancy</h3>
+            <h4 style="color:#808080">Floating bodies, Eureka !!</h4>
+            <p>Buoyancy as discovered by Archimedes in 265 BCE, is the uplift force exerts when an object of given mass is immersed in the fluid. <p/><p>A practical application can be seen in modern-day submarines.</p>
+            <p>Applying the similar concept of buoyancy we ideated our concept to be complete with it.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="parallax-service" style="margin-top:-45px; padding-top:0px;">
+      <div class="container" style="padding:60px 40px 20px 620px;">
+        <div class="row" style="border-bottom: 1px dotted #fff;padding-bottom:30px;">
+          <h4 style="color:#fff;">SROTUM MICROGRID</h4>
+          <img src="http://www.strategyminions.com/des/img/microgrid-wt.png" class="img-fluid" alt="">
+        </div>
+        <div class="row" style="margin-top:30px;">
+          <div class="col-3">
+            <img src="http://www.strategyminions.com/des/img/24-hours-delivery.png" style="width:60px; height:auto;" class="img-fluid" alt="" >
+          </div>
+          <div class="col-3">
+            <img src="http://www.strategyminions.com/des/img/affordable.png" style="width:60px; height:auto;" class="img-fluid" alt="">
+          </div>
+          <div class="col-3">
+            <img src="http://www.strategyminions.com/des/img/sustain.png" style="width:60px; height:auto;" class="img-fluid" alt="">
+          </div>
+          <div class="col-3">
+            <img src="http://www.strategyminions.com/des/img/lego.png" style="width:60px; height:auto;" class="img-fluid" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="howwearedifferent">
+      <div class="row">
+        <div class="col">
+          <h2 class="text-white">
+            What makes us different?
+          </h2>
+          <h4 style="color:#fff;">
+            <!-- Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. -->
+          We believe in creating steady supply of power under the minimum possible costs to the unlighted neighbourhoods in the country by providing accessible and sustainable solution.
+          </h4>
+        </div>
+      </div>
+      <div class="row" style="margin-top:40px;">
+        <div class="col-9">
+          <table style="width:auto" class="table table-dark table-hover">
+            <tr>
+              <th></th>
+              <td>WIND</td>
+              <td>SOLAR</td>
+              <td>SROTUM</td>
+            </tr>
+            <tr>
+              <th style="border-right:1px solid #808080;">Reliability</th>
+              <td>Less</td>
+              <td>Less</td>
+              <td>Sustainable</td>
+            </tr>
+            <tr>
+              <th style="border-right:1px solid #808080;">Accessiblity</th>
+              <td>Dependable</td>
+              <td>Dependable</td>
+              <td>Full</td>
+            </tr>
+            <tr>
+              <th style="border-right:1px solid #808080;">Availability</th>
+              <td>Depends on wind</td>
+              <td>Depends On Sun’s Lumunosity</td>
+              <td>24/7, No dependency</td>
+            </tr>
+            <tr>
+              <th style="border-right:1px solid #808080;">Land Required</th>
+              <td>Highest</td>
+              <td>Moderate</td>
+              <td>Lowest</td>
+            </tr>
+            <tr>
+              <th style="border-right:1px solid #808080;">Capital Investments</th>
+              <td>High</td>
+              <td>Moderate</td>
+              <td>Moderate</td>
+            </tr>
+            <tr>
+              <th style="border-right:1px solid #808080;">Installation</th>
+              <td>Easy</td>
+              <td>Moderate</td>
+              <td>Modular</td>
+            </tr>
+            <tr>
+              <th style="border-right:1px solid #808080;">Grid Failure</th>
+              <td>Yes</td>
+              <td>None</td>
+              <td>None</td>
+            </tr>
+          </table>
+
+
+        </div>
+        <!-- <div class="col-3">
+          some graphics here
+        </div> -->
+      </div>
+    </div>
+    <div class="" id="next">
+      <!-- <iframe src="http://www.strategyminions.com/des/timeline.html" frameborder="0" style="width: 100%; height: 100%; position: absolute" id="fileframe"></iframe> -->
+      <iframe src="http://www.strategyminions.com/des/timeline.html" frameborder="0" style="width: 100%; height: 100%; position: absolute" id="fileframe"></iframe>
+    </div>
+    <div class="lab" style="margin-top:40px;"></div>
+    <div class="lab" id="lab" style="background-color: #fff; margin-top:40px; padding:180px 185px;">
+    <div style="background-color:#fff; padding:60px;-webkit-box-shadow: 0px 2px 5px -2px rgba(0,0,0,0.75);-moz-box-shadow: 0px 2px 5px -2px rgba(0,0,0,0.75);box-shadow: 0px 2px 5px -2px rgba(0,0,0,0.75);">
+    <h2>Lab</h2>
+      <div class="panel">
+        <h4>
+        We will update you about what are we cooking in the lab!</h4>
+        <!-- <h6>Please subscribe ..</h6> -->
+
+        <form class="form-inline">
+        <div class="form-group">
+          <label class="sr-only" for="exampleInputEmail3">Email address</label>
+          <input type="email" class="form-control" id="exampleInputEmail3" placeholder="Enter email">
+        </div>
+        <button type="submit" class="btn btn-primary">SUBSCRIBE</button>
+        </form>
+      </div>
+    </div>
+
+    </div>
+    <div class="about" id="about" style="margin-top:-45px;padding:40px 65px;">
+      <h2 style="color:#fff;">About Us</h2>
+      <h4 style="color:#fff;">
+        We are a group of a diverse yet aligned team focused on creating an unmatched value.
+        <!-- Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. -->
+      </h4>
+      <div class="row" style="margin-top:20px; padding:40px 65px;">
+
+      <div class="col">
+        <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+        	<div class="flipper">
+        		<div class="front">
+        			<!-- front content -->
+              <img src="http://www.strategyminions.com/des/img/team/gunjan.JPG" class="img-fluid x filter" alt="">
+              <h4 class="text-white" style="margin-top:10px;border-bottom:1px solid teal;">Gunjan Indauliya</h4>
+
+            </div>
+        		<div class="back">
+        			<!-- back content -->
+              <h4 class="text-justify text-white text-center " style="border-bottom:1px solid #fff;">C.E.O</h4>
+              <p class="text-center text-white" style="border-bottom:1px solid #fff;">
+                <span class="dot"></span> CEO
+                <span class="dot"></span> Lead R&D
+              </p>
+              <p class="text-left text-white">
+                Gunjan Indauliya, a masters’ in nuclear engineering, has worked for the Institute of Plasma Research (IPR) as a project scientist for ...
+              </p>
+        		</div>
+        	</div>
+          <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#gunjan">BIO</button>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+          <div class="flipper">
+            <div class="front">
+              <!-- front content -->
+              <img src="http://www.strategyminions.com/des/img/team/manjul.jpeg" class="img-fluid x filter" alt="">
+              <h4 class="text-white" style="margin-top:10px;border-bottom:1px solid teal;">Manjul Indauliya</h4>
+
+            </div>
+            <div class="back">
+              <!-- back content -->
+              <h4 class="text-justify text-white text-center " style="border-bottom:1px solid #fff;">Legal Head</h4>
+              <p class="text-center text-white" style="border-bottom:1px solid #fff;">
+                <span class="dot"></span> Angel
+                <span class="dot"></span> Legal Head
+              </p>
+              <p class="text-left text-white">
+                Manjul Indauliya is a senior legal associate with an experience of 3 years and 9 months in the field working with Quisslex ...
+              </p>
+            </div>
+          </div>
+          <button type="button" class="btn btn-primary btn-sm " data-toggle="modal" data-target="#manjul">BIO</button>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+          <div class="flipper">
+            <div class="front">
+              <!-- front content -->
+              <img src="http://www.strategyminions.com/des/img/team/neeraj.jpg" class="img-fluid x filter" alt="">
+              <h4 class="text-white" style="margin-top:10px;border-bottom:1px solid teal;">Neeraj Das</h4>
+
+            </div>
+            <div class="back">
+              <!-- back content -->
+              <h4 class="text-justify text-white text-center " style="border-bottom:1px solid #fff;">Business Mentor</h4>
+              <p class="text-center text-white" style="border-bottom:1px solid #fff;">
+                <span class="dot"></span> Strategy
+                <span class="dot"></span> Business
+              </p>
+              <p class="text-left text-white">
+                Is A Fellow From Harvard Extension School With Specializations In Ui/Ux Designing And Data Visualization. He Has Done His ...
+              </p>
+            </div>
+          </div>
+          <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#neeraj">BIO</button>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+          <div class="flipper">
+            <div class="front">
+              <!-- front content -->
+              <img src="http://www.strategyminions.com/des/img/team/bhavya.jpg" class="img-fluid x filter" alt="">
+              <h4 class="text-white" style="margin-top:10px;border-bottom:1px solid teal;">Bhavya Ranpara</h4>
+
+            </div>
+            <div class="back">
+              <!-- back content -->
+              <h4 class="text-justify text-white text-center " style="border-bottom:1px solid #fff;">Market Analyst</h4>
+              <p class="text-center text-white" style="border-bottom:1px solid #fff;">
+                <span class="dot"></span> PR
+                <span class="dot"></span> Marketing
+              </p>
+              <p class="text-left text-white">
+                Is A Second Year Bachelors In Science- Chemistry (Honors) Drop-Out From Pandit Deendayal Petroleum University (Pdpu),
+Gandhinagar, Having A Knack In Observing...
+              </p>
+            </div>
+          </div>
+          <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#bhavya">BIO</button>
+        </div>
+      </div>
+
+      </div>
+    </div>
+    <div class="parallax-two" style="margin-top:-45px;padding:60px 65px;">
+      <div class="col-4" style="background: hsla(220, 8%, 12%, 0.6); padding:20px;">
+          <img src="http://www.strategyminions.com/des/img/logo-full-new.png" height="60px" width="auto" alt="" style="margin-bottom:20px;">
+            <p>C 501, Pramukh Elegance, Raysan, Gandhinagar, Gujarat
+            382007<br><br>
+            <i class="fas fa-phone"></i> +91 972 713 5973 | +91 970 641 0533<br>
+            <i class="far fa-envelope-open"></i> info@srotum.com</p>
+      </div>
+    </div>
+  </main>
+  <!-- Modal -->
+<div class="modal fade" id="gunjan" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title" id="myModalLabel">Gunjan Indauliya</h4>
+      </div>
+      <div class="modal-body">
+Gunjan Indauliya, a masters’ in nuclear engineering, has worked for the Institute of Plasma Research (IPR) as a project scientist for International Thermonuclear Experimental Reactor (ITER), India for a tenure of three years. Being in close association with the field of clean tech, Gunjan developed a curious knack for the same by coming up with new and effective ways to generate renewable energy. Inspired by the same passion and lots of hard work which was coupled with years of experience and expertise- she finally came up with a validated model under the company name of “Srotum” (originally GravityStar).
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
     </div>
   </div>
 </div>
-<!-- -->
-<script src='https://cdnjs.cloudflare.com/ajax/libs/animejs/2.2.0/anime.min.js'></script>
-<script>
-      var current = null;
-document.querySelector('#name').addEventListener('focus', function(e) {
-  if (current) current.pause();
-  current = anime({
-    targets: 'path',
-    strokeDashoffset: {
-      value: 0,
-      duration: 700,
-      easing: 'easeOutQuart'
-    },
-    strokeDasharray: {
-      value: '240 1386',
-      duration: 700,
-      easing: 'easeOutQuart'
-    }
-  });
-});
-document.querySelector('#email').addEventListener('focus', function(e) {
-  if (current) current.pause();
-  current = anime({
-    targets: 'path',
-    strokeDashoffset: {
-      value: -336,
-      duration: 700,
-      easing: 'easeOutQuart'
-    },
-    strokeDasharray: {
-      value: '240 1386',
-      duration: 700,
-      easing: 'easeOutQuart'
-    }
-  });
-});
-document.querySelector('#submit').addEventListener('focus', function(e) {
-  if (current) current.pause();
-  current = anime({
-    targets: 'path',
-    strokeDashoffset: {
-      value: -730,
-      duration: 700,
-      easing: 'easeOutQuart'
-    },
-    strokeDasharray: {
-      value: '530 1386',
-      duration: 700,
-      easing: 'easeOutQuart'
-    }
-  });
-});
-      //# sourceURL=pen.js
+<!-- Modal -->
+<div class="modal fade" id="manjul" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+<div class="modal-dialog" role="document">
+  <div class="modal-content">
+    <div class="modal-header">
+      <h4 class="modal-title" id="myModalLabel">Manjul Indauliya</h4>
+    </div>
+    <div class="modal-body">
+Manjul Indauliya is a senior legal associate with an experience of 3 years and 9 months in the field working with Quisslex. He has graduated from KIITS School of Law, Bhubhaneshwar with majors in Intellectual Property Rights. His experience of handling various international clients added with his interest in business is a great value addition to the team with regard to the business developmental aspects of it.
+    </div>
+    <div class="modal-footer">
+      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+    </div>
+  </div>
+</div>
+</div>
+<!-- Modal -->
+<div class="modal fade" id="neeraj" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+<div class="modal-dialog" role="document">
+  <div class="modal-content">
+    <div class="modal-header">
+      <h4 class="modal-title" id="myModalLabel">Neeraj Das</h4>
+    </div>
+    <div class="modal-body">
+      Is a fellow from harvard extension school with
+      specializations in ui/ux designing and data visualization.
+      He has done his bachelors in engineering in computer
+      science from priyadarshini institute of technology,
+      Nagpur and his masters in product designing from
+      National institute of creative communications, bangalore
+      with a specialization in industrial designing. Apart from
+      his educational qualifications, neeraj has around 9 years
+      of experience in multiple start-up styled fast paced
+      entrepreneurial ventures which has given him an unique
+      decision making and executive abilities matched by a
+      very few. He has served as ceo at inkgab, bangalore
+      which was later acquired by unity. He has also served
+      as a co-founder and cto with various startups which
+      mainly include- superbrick, techstrada, and prajuctone.
+    </div>
+    <div class="modal-footer">
+      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+    </div>
+  </div>
+</div>
+</div>
+<!-- Modal -->
+<div class="modal fade" id="bhavya" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+<div class="modal-dialog" role="document">
+  <div class="modal-content">
+    <div class="modal-header">
+      <h4 class="modal-title" id="myModalLabel">Bhavya Ranpara</h4>
+    </div>
+    <div class="modal-body">
+      Is a second year bachelors in science-
+      chemistry (honors) drop-out from Pandit Deendayal Petroleum University (PDPU),
+      Gandhinagar, having a knack in observing,
+      evaluating, and idealizing unforeseen
+      phenomenons in the day-to-day lives of
+      people. This is one of the few reasons why
+      He is a perfect fit for ideating and simulating
+      the current and the future plans and
+      projections of the business. Bhavya has also
+      an experience of efficiently taking a dead
+      Start-up forward for a period of 1 year at
+      Innovation and Incubation Centre (iic), pdpu
+      After having been chosen by the senior
+      executive. He has also worked as an active
+      team member involved with operations and
+      expansions of one of the top-8 startups of
+      Gujarat, freecopy for a matter of four months.
+
+    </div>
+    <div class="modal-footer">
+      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+    </div>
+  </div>
+</div>
+</div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="http://www.strategyminions.com/des/js/bootstrap.min.js" ></script>
+    <script type="text/javascript">
+    $(document).ready(function(){
+      $(window).scroll(function(){
+      	var scroll = $(window).scrollTop();
+    	  if (scroll > 500) {
+    	    $(".navbar-dark").css("background" , "#000");
+    	  }
+        else{
+    		  $(".navbar-dark").css("background" , "transparent");
+    	  }
+      })
+    })
     </script>
-</body>
+    <script type="text/javascript" src="https://codyhouse.co/demo/horizontal-timeline/js/main.js"></script>
+    <script type="text/javascript">
+    // DISCLAIMER: This function does require jQuery. I've used it here because the project I'm building this for already uses jQuery, so I thought why not. It can be modified quite simply to be done in raw JavaScript.  Just thought I'd let you know.
+
+
+
+
+    // This is the funtion you need to copy
+    // Copy from line 9 to 34
+
+    function autoType(elementClass, typingSpeed){
+      var thhis = $(elementClass);
+      thhis.css({
+        "position": "relative",
+        "display": "inline-block"
+      });
+      thhis.prepend('<div class="cursor" style="right: initial; left:0;"></div>');
+      thhis = thhis.find(".text-js");
+      var text = thhis.text().trim().split('');
+      var amntOfChars = text.length;
+      var newString = "";
+      thhis.text("|");
+      setTimeout(function(){
+        thhis.css("opacity",1);
+        thhis.prev().removeAttr("style");
+        thhis.text("");
+        for(var i = 0; i < amntOfChars; i++){
+          (function(i,char){
+            setTimeout(function() {
+              newString += char;
+              thhis.text(newString);
+            },i*typingSpeed);
+          })(i+1,text[i]);
+        }
+      },1500);
+    }
+
+    $(document).ready(function(){
+      // Now to start autoTyping just call the autoType function with the
+      // class of outer div
+      // The second paramter is the speed between each letter is typed.
+      autoType(".type-js",120);
+    });
+    </script>
+  </body>
 </html>
- 
